@@ -1,0 +1,363 @@
+﻿/*Reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*----Header------*/
+.header {
+    height: 50px;
+    background-color: #5ce1e6;
+}
+
+.login {
+    background-color: rgb(96, 151, 147);
+    width: 100%;
+}
+
+.btnlogin {
+    margin-left: 50%;
+    line-height: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+}
+
+.login .btnlogin:hover {
+    background-color: rgb(69, 84, 85);
+}
+/*----Menu------*/
+.menu {
+    margin-bottom: 20px;
+    height: 50px;
+    margin-left: 15%;
+}
+
+    .menu li {
+        width: 150px;
+        display: inline-table;
+        position: relative;
+        float: left;
+    }
+
+    .menu > li > a {
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .menu li a {
+        display: block;
+        line-height: 50px;
+        padding: 0 20px;
+        text-decoration: none;
+    }
+
+    .menu li:hover .dropdown-theloai {
+        display: block;
+    }
+
+    /*----Hover cho Menu------*/
+
+    .menu > li:hover > a {
+        background-color: rgb(40, 139, 139);
+        color: #fff;
+    }
+    /*-------Dropdown-Thể loại---------*/
+    .menu .dropdown-theloai {
+        background-color: #fff;
+        display: none;
+        position: absolute;
+    }
+
+        .menu .dropdown-theloai a {
+            color: rgb(12, 12, 12);
+        }
+        /*----Hover cho dropdown-------*/
+        .menu .dropdown-theloai li:hover a {
+            box-shadow: 0px 1px 5px rgb(190, 186, 186);
+            background-color: rgb(40, 139, 139);
+            color: #fff;
+        }
+
+
+/*  form SIGN IN*/
+.content {
+    background-color: bisque;
+}
+
+.user {
+    display: none;
+}
+
+.content {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth {
+    display: block;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 440px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.auth__header {
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .auth__header h2 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #696969;
+    }
+
+.switch-btn {
+    color: var(--primary-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.auth__form {
+    padding: 15px 40px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+    .form-control label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .form-control input {
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        outline-color: #2ecc71;
+    }
+
+
+
+/*.form-control.invalid input {
+        border-color: #e74c3c;
+        outline-color: #e74c3c;
+    }
+
+    .form-control.invalid small {
+        visibility: visible;
+        color: #e74c3c;
+    }
+
+    .form-control small {
+        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }*/
+
+.auth_btn {
+    cursor: pointer;
+    background-color: #2ecc71;
+    border: none;
+    color: #f0f0f0;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 3px;
+    outline: none;
+}
+
+    .auth_btn:hover {
+        background-color: #2abb66;
+    }
+
+.auth:nth-child(2) {
+    display: none;
+}
+
+/*                                FOOTER                         */
+/* -----Footer---- */
+.footer {
+    background-color: #5ce1e6;
+    display: grid;
+    grid-column: 1/13;
+    grid-template-columns: repeat(12,1fr);
+    width: 100%;
+    height: 200px;
+}
+
+.footer-add {
+    grid-column: 5/9;
+    margin: 10px;
+}
+
+.footer-name {
+    grid-column: 1/4;
+    margin: 10px;
+}
+
+.footer-last {
+    grid-column: 9/13;
+    margin: 10px;
+}
+
+p {
+    line-height: 20px;
+}
+
+/*                                          RESPONSIVE                              */
+@media screen and (max-width: 1220px) {
+    .header {
+        width: 100%;
+        height: auto;
+        display: inline-table;
+    }
+
+    .menu li {
+        width: 100%;
+        border: 1px solid rgb(180, 230, 230);
+    }
+
+    .menu .dropdown-theloai {
+        width: 100%;
+        display: none;
+        position: relative;
+    }
+
+        .menu .dropdown-theloai li {
+            width: 100%;
+            text-align: center;
+            background-color: rgb(156, 236, 210);
+        }
+
+    .cardHot {
+        width: 22%;
+    }
+
+        .cardHot:hover {
+            background-color: rgb(240, 235, 235);
+            width: 23%;
+            height: 350px;
+            margin: 10px 15px;
+        }
+
+        .cardHot img {
+            width: 90%;
+            margin: 5%;
+        }
+
+    .banner {
+        margin: 1%;
+        width: 98%;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .menu {
+        margin-left: 0px;
+    }
+
+        .menu li {
+            width: 100%;
+            border: 1px solid rgb(180, 230, 230);
+        }
+
+    .cardHot {
+        width: 290px;
+    }
+
+        .cardHot:hover {
+            background-color: rgb(240, 235, 235);
+            width: 300px;
+        }
+
+        .cardHot img {
+            width: 90%;
+        }
+
+    .banner {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        margin-left: 0px;
+    }
+
+    .cardHot {
+        margin-left: 10%;
+        width: 260px;
+    }
+
+        .cardHot:hover {
+            background-color: rgb(240, 235, 235);
+            width: 280px;
+            margin-left: 15%;
+        }
+
+    .banner {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        margin-left: 0px;
+    }
+
+    .cardHot {
+        margin: 2%;
+        width: 90%;
+    }
+
+    .banner {
+        width: 90%;
+    }
+
+    .cardHot:hover {
+        background-color: rgb(240, 235, 235);
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .cardHot img {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .footer h2 {
+        font-size: 15px;
+    }
+}

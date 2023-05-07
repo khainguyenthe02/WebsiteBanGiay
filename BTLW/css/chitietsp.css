@@ -1,0 +1,360 @@
+﻿/*Reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*----Header------*/
+.header {
+    height: 50px;
+    background-color: #5ce1e6;
+}
+
+.user {
+    margin-left: 20px;
+    height: 20px;
+    color: white;
+    text-decoration: inherit;
+    font-weight: bold;
+}
+
+.login {
+    display: block;
+    height: 50px;
+    background-color: darkcyan;
+    width: 100%;
+}
+
+
+    .login a {
+        margin-left: 20px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: white;
+        padding: 5px;
+        text-align: center;
+    }
+
+        .login a:hover {
+            height: auto;
+            background-color: rgb(69, 84, 85);
+        }
+/*----Menu------*/
+.menu {
+    margin-left: 15%;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+    .menu li {
+        width: 150px;
+        display: inline-table;
+        position: relative;
+        float: left;
+    }
+
+    .menu > li > a {
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .menu li a {
+        display: block;
+        line-height: 50px;
+        padding: 0 20px;
+        text-decoration: none;
+    }
+
+    .menu li:hover .dropdown-theloai {
+        display: block;
+    }
+
+    /*----Hover cho Menu------*/
+
+    .menu > li:hover > a {
+        background-color: rgb(40, 139, 139);
+        color: #fff;
+    }
+    /*-------Dropdown-Thể loại---------*/
+    .menu .dropdown-theloai {
+        background-color: #fff;
+        display: none;
+        position: absolute;
+    }
+
+        .menu .dropdown-theloai a {
+            color: rgb(12, 12, 12);
+        }
+        /*----Hover cho dropdown-------*/
+        .menu .dropdown-theloai li:hover a {
+            box-shadow: 0px 1px 5px rgb(190, 186, 186);
+            background-color: rgb(40, 139, 139);
+            color: #fff;
+        }
+
+/*              SEARCH                  */
+.search-product {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: darkcyan;
+}
+
+#txtsearch {
+    width: 40%;
+    margin-left: 20%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#btnSearch {
+    width: 15%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: darkorange;
+    text-align: center;
+}
+/* ----Nội dung content */
+.content {
+    display: flex;
+    
+}
+
+.danhmuc {
+    margin: 10px;
+    height: 200px;
+    width: 35%;
+    background-color: #2fabb4;
+}
+
+    .danhmuc a {
+        padding: 10px;
+        margin-left: 30px;
+        text-transform: inherit;
+        text-decoration: none;
+        color: #d0e9a0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+        .danhmuc a:hover {
+            background-color: #5ce1e6;
+            color: #000;
+        }
+
+.chitiet {
+    width: 60%;
+    margin: 10px;
+    border: 1px solid rgb(187, 186, 186);
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgb(143, 139, 139);
+}
+
+.chitiet hr {
+    width: 70%;
+}
+
+
+#anhchitiet {
+    width: 75%;
+    height: 75%;
+    
+    margin: 10px 5%;
+    border-radius: 10px;
+}
+
+#btnaddtocart {
+    background-color: orange;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin: 20px 30%;
+    border-radius: 10px;
+}
+#btnaddtocart:hover {
+    background-color:chocolate;
+    color: black;
+}
+#textchitiet {
+    width: 60%;
+}
+.chitietsp h3 {
+    margin-top: 15px;
+
+}
+
+/* -----Footer---- */
+.footer {
+    background-color: #5ce1e6;
+    display: grid;
+    grid-column: 1/13;
+    grid-template-columns: repeat(12,1fr);
+    width: 100%;
+    height: 200px;
+}
+
+.footer-add {
+    grid-column: 5/9;
+    margin: 10px;
+}
+
+.footer-name {
+    grid-column: 1/4;
+    margin: 10px;
+}
+
+.footer-last {
+    grid-column: 9/13;
+    margin: 10px;
+}
+
+p {
+    line-height: 20px;
+}
+
+/*                                         RESPONSIVE                              */
+@media screen and (min-width:1220px) {
+
+    .cardHot {
+        margin: 15px;
+        width: 20%;
+    }
+
+        .cardHot img {
+            width: 90%;
+            margin: 5%;
+        }
+
+        .cardHot:hover {
+            width: 23%;
+            height: 350px;
+            margin: 10px 15px;
+        }
+}
+
+@media screen and (max-width: 1220px) {
+    .header {
+        width: 100%;
+        height: auto;
+        display: inline-table;
+    }
+
+    .menu {
+        margin-left: 0px;
+    }
+
+        .menu li {
+            width: 100%;
+            border: 1px solid rgb(180, 230, 230);
+        }
+
+        .menu .dropdown-theloai {
+            width: 100%;
+            display: none;
+            position: relative;
+        }
+
+            .menu .dropdown-theloai li {
+                width: 100%;
+                text-align: center;
+                background-color: rgb(156, 236, 210);
+            }
+
+    .cardHot {
+        width: 22%;
+    }
+
+        .cardHot:hover {
+            width: 23%;
+            height: 350px;
+            margin: 10px 15px;
+        }
+
+        .cardHot img {
+            width: 90%;
+            margin: 5%;
+        }
+
+    .banner {
+        margin: 1%;
+        width: 98%;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .cardHot {
+        width: 290px;
+    }
+    .menu {
+        margin-left: 0;
+    }
+        .cardHot:hover {
+            width: 300px;
+        }
+
+        .cardHot img {
+            width: 90%;
+        }
+
+    .chitiet {
+        width: 90%;
+    }
+
+
+
+@media screen and (max-width: 768px) {
+    .cardHot {
+        margin-left: 10%;
+        width: 290px;
+    }
+
+        .cardHot:hover {
+            width: 300px;
+            margin-left: 15%;
+        }
+
+   .content {
+       display: block;
+   }
+    .danhmuc {
+        width: 90%;
+    }
+    .chitiet {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cardHot {
+        margin: 2%;
+        width: 95%;
+    }
+
+    .banner {
+        width: 90%;
+    }
+
+    .cardHot img {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .footer h2 {
+        font-size: 15px;
+    }
+}
+
+
+

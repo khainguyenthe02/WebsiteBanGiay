@@ -1,0 +1,436 @@
+﻿/*Reset CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*----Header------*/
+.header {
+    height: 50px;
+    background-color: #5ce1e6;
+}
+
+.user {
+    margin-left: 20px;
+    height: 20px;
+    color: white;
+    text-decoration: inherit;
+    font-weight: bold;
+}
+
+.login {
+    display: block;
+    height: 50px;
+    background-color: darkcyan;
+    width: 100%;
+}
+
+
+    .login a {
+        margin-left: 20px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: white;
+        padding: 5px;
+        text-align: center;
+    }
+
+        .login a:hover {
+            height: auto;
+            background-color: rgb(69, 84, 85);
+        }
+/*----Menu------*/
+.menu {
+    margin-left: 15%;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+    .menu li {
+        width: 150px;
+        display: inline-table;
+        position: relative;
+        float: left;
+    }
+
+    .menu > li > a {
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .menu li a {
+        display: block;
+        line-height: 50px;
+        padding: 0 20px;
+        text-decoration: none;
+    }
+
+    .menu li:hover .dropdown-theloai {
+        display: block;
+    }
+
+    /*----Hover cho Menu------*/
+
+    .menu > li:hover > a {
+        background-color: rgb(40, 139, 139);
+        color: #fff;
+    }
+    /*-------Dropdown-Thể loại---------*/
+    .menu .dropdown-theloai {
+        background-color: #fff;
+        display: none;
+        position: absolute;
+    }
+
+        .menu .dropdown-theloai a {
+            color: rgb(12, 12, 12);
+        }
+        /*----Hover cho dropdown-------*/
+        .menu .dropdown-theloai li:hover a {
+            box-shadow: 0px 1px 5px rgb(190, 186, 186);
+            background-color: rgb(40, 139, 139);
+            color: #fff;
+        }
+
+        /*              SEARCH                  */  
+.search-product {
+    display:flex;
+    width: 100%;
+    height: 50px;
+    background-color: darkcyan;
+}
+#txtsearch {
+    width:40%;
+    margin-left: 20%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+#btnSearch {
+    width: 15%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: darkorange;
+    text-align: center;
+}
+.filter {
+    margin: 10px;
+}
+.filter__list a {
+    text-decoration: none;
+    font-weight: bold;
+    color:chocolate;
+}
+.filter__list a:hover{
+    color: brown;
+    text-decoration:underline;
+
+}
+/* ---Banner */
+.banner {
+    border-radius: 5px;
+}
+
+    .banner img {
+        width: 98%;
+        margin: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 20px rgb(58, 58, 58);
+    }
+
+/*                 Liên hệ                   */
+.lienhe {
+    background-color:burlywood;
+    border: 1px solid rgb(143, 138, 138);
+    margin: 5px;
+    display: grid;
+    grid-column: 1/13;
+}
+
+.left {
+    
+    grid-column: 5/13;
+}
+
+    .left  ul {
+        margin: 30px;
+        list-style: none;
+        
+    }
+
+    .left img {
+        box-shadow: 5px 5px 5px rgb(144, 141, 141);
+    }
+/* ----Nội dung content */
+.content {
+    display: block;
+    margin-top: 40px;
+}
+
+.content-2 {
+    width: 100%;
+    display: block;
+    float: left;
+    margin-top: 40px;
+}
+
+.h1 {
+    text-decoration: underline;
+    color: red;
+}
+
+hr {
+    margin-left: 15%;
+    width: 70%;
+}
+
+.cardHot {
+    border-radius: 10px;
+    float: left;
+    width: 300px;
+    height: 350px;
+    margin: 10px 15px;
+    border: 1px solid rgb(187, 186, 186);
+    box-shadow: 0px 1px 5px rgb(190, 186, 186);
+}
+
+    .cardHot h2, .cardHot p {
+        text-align: center;
+    }
+
+    .cardHot img {
+        width: 80%;
+        height: 200px;
+        margin: 30px 30px;
+        border-radius: 10px;
+    }
+
+    .cardHot:hover {
+        background-color: antiquewhite;
+    }
+
+h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+/*                                        Danh sách giày              */
+.up {
+    margin: 25px 80px 30px 80px;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.abc a:hover {
+    color: #424242;
+}
+/* -----Footer---- */
+.footer {
+    background-color: #5ce1e6;
+    display: grid;
+    grid-column: 1/13;
+    grid-template-columns: repeat(12,1fr);
+    width: 100%;
+    height: 200px;
+}
+
+.footer-add {
+    grid-column: 5/9;
+    margin: 10px;
+}
+
+.footer-name {
+    grid-column: 1/4;
+    margin: 10px;
+}
+
+.footer-last {
+    grid-column: 9/13;
+    margin: 10px;
+}
+
+p {
+    line-height: 20px;
+}
+/*                              RESPONSIVE                                 */
+@media screen and (max-width: 1220px) {
+    .header {
+        width: 100%;
+        height: auto;
+        display: inline-table;
+    }
+
+    .menu li {
+        width: 100%;
+        border: 1px solid rgb(180, 230, 230);
+    }
+
+    .menu .dropdown-theloai {
+        width: 100%;
+        display: none;
+        position: relative;
+    }
+
+        .menu .dropdown-theloai li {
+            width: 100%;
+            text-align: center;
+            background-color: rgb(156, 236, 210);
+        }
+
+    .content {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .content-2 {
+        float: left;
+        margin-top: 40px;
+    }
+
+    .cardHot:hover {
+        background-color: rgb(240, 235, 235);
+        width: 23%;
+        height: 350px;
+        margin: 10px 15px;
+    }
+
+    .cardHot img {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .banner {
+        margin: 1%;
+        width: 98%;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .menu {
+        margin-left: 0px;
+    }
+
+        .menu li {
+            width: 100%;
+            border: 1px solid rgb(180, 230, 230);
+        }
+
+    .content {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .content-2 {
+        float: left;
+        margin-top: 40px;
+    }
+
+    .cardHot:hover {
+        background-color: rgb(240, 235, 235);
+        width: 300px;
+    }
+
+    .cardHot img {
+        width: 90%;
+    }
+
+    .banner {
+        width: 95%;
+    }
+    .price-all {
+        width: 80%;
+    }
+    .cart-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        margin-left: 0px;
+    }
+
+    .content {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .content-2 {
+        float: left;
+        margin-top: 40px;
+    }
+
+    .cardHot:hover {
+        background-color: rgb(240, 235, 235);
+    }
+    .price-all {
+        width: 80%;
+    }
+
+    .cart-right {
+        width: 100%;
+    }
+    .banner {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        margin-left: 0px;
+    }
+
+    .content {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .content-2 {
+        float: left;
+        margin-top: 40px;
+    }
+
+
+    .banner {
+        width: 90%;
+    }
+
+    .cardHot:hover {
+        background-color: rgb(240, 235, 235);
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .cardHot img {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .footer h2 {
+        font-size: 15px;
+    }
+    .main {
+        width: 100%;
+    }
+    .price-all {
+        width: 80%;
+    }
+
+    .cart-right {
+        width: 100%;
+    }
+}

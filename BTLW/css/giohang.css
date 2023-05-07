@@ -1,0 +1,188 @@
+﻿
+
+.td1 {
+    width: 150px;
+    height: 150px;
+}
+
+/*                              css giỏ hàng                    */
+
+
+.bang {
+    background-color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgb(77, 74, 74);
+    border: 1px solid #96a79d;
+    width: 80%;
+    margin-left: 10%;
+}
+
+    .bang th {
+        border: 1px solid rgb(117, 114, 114);
+        background-color: #5ce1e6;
+        line-height: 30px;
+        width: 15%;
+    }
+
+    .bang p {
+        text-align: center;
+    }
+
+    .bang a {
+        margin-left: 30%;
+    }
+
+.xoa button {
+    width: 40%;
+    height: 30px;
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#btn-left {
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.bang img {
+    margin-left: 10%;
+    width: 80%;
+    height: 150px;
+}
+
+.cart--right {
+    
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.price-all {
+    width: 40%;
+    height: 400px;
+    margin: 10px 10%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #96a79d;
+}
+.title {
+    text-align: center;
+    text-decoration:underline;
+    color: orangered;
+}
+.tong-tien, .sogiohang {
+    margin-left: 10px;
+    margin-top: 10px;
+} 
+.cart__button {
+    width: 70%;
+    height: 30px;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+#purchase-button {
+    width: 40%;
+    height: 27px;
+    margin-left: 30%;
+    background-color: royalblue;
+    color: #fff;
+    text-align:center;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+#purchase-button:hover {
+    background-color:darkcyan;
+}
+#txtTen, #txtDiachi, #txtSDT {
+    width: 70%;
+    margin: 5px 15%;
+}
+.select-bank {
+    width: 40%;
+}
+/*              SEARCH                  */
+.search-product {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: darkcyan;
+}
+
+#txtsearch {
+    width: 40%;
+    margin-left: 20%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#btnSearch {
+    width: 15%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: darkorange;
+    text-align: center;
+}
+@media screen and (max-width: 1200px) {
+    .price-all {
+        margin: 1%;
+        width: 98%;
+    }
+
+    .cart--right {
+        width: 100%;
+    }
+    #txtsearch {
+        margin: 0;
+        width: 60%;
+        height:50px;
+    }
+
+    #btnSearch {
+        margin: 0;
+        width: 40%;
+        height: 50px;
+    }
+}
+/*responsive*/
+@media screen and (max-width: 768px) {
+    .price-all {
+        margin: 1%;
+        width: 98%;
+    }
+.cart--right {
+    width: 100%;
+}
+    #txtsearch {
+        margin: 0;
+        width: 60%;
+        height: 50px;
+    }
+    #btnSearch {
+        margin: 0;
+        width: 40%;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .price-all {
+        margin: 1%;
+        width: 98%;
+    }
+    .cart--right {
+        width: 80%;
+    }
+    #txtsearch {
+        margin: 0;
+        width: 60%;
+        height: 50px;
+    }
+
+    #btnSearch {
+        margin: 0;
+        width: 40%;
+        height: 50px;
+    }
+}
